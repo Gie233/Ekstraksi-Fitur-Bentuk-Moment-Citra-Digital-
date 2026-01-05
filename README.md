@@ -43,9 +43,11 @@ Laporan lengkap proyek kelompok tersedia pada folder:
 report/Group_Project_Report.md
 
 ## 👥 Anggota Kelompok
-- Nama 1
-- Nama 2
-- Nama 3
+- Anggie Syahputra
+- Barren Al Faridzi
+- Muhammad Rifky Husnaedi
+- Rizky Koto
+- Rizkyllah
 
 ## 📌 Catatan
 Repository ini dibuat untuk tujuan akademik dan pembelajaran.
