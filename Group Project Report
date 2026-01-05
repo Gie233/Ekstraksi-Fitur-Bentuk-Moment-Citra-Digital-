@@ -1,0 +1,125 @@
+# GROUP PROJECT REPORT  
+## Ekstraksi Fitur Bentuk dan Moment pada Dataset MPEG-7 Shape
+
+---
+
+## BAB I  
+### PENDAHULUAN
+
+#### 1.1 Latar Belakang
+Ekstraksi fitur bentuk merupakan salah satu aspek penting dalam pengolahan citra digital,
+khususnya dalam bidang pengenalan pola dan analisis citra. Bentuk objek dapat direpresentasikan
+secara numerik menggunakan moment dan fitur geometrik sehingga memungkinkan komputer
+untuk membedakan objek berdasarkan karakteristik bentuknya.
+
+Dataset MPEG-7 Shape dipilih karena menyediakan citra siluet dengan latar belakang homogen,
+sehingga sesuai untuk implementasi ekstraksi bentuk tanpa proses segmentasi yang kompleks.
+
+#### 1.2 Tujuan
+Tujuan dari proyek kelompok ini adalah:
+1. Mengimplementasikan ekstraksi bentuk pada citra siluet
+2. Menghitung fitur moment (raw, central, normalized, dan Hu moment)
+3. Mengekstraksi fitur geometrik tambahan
+4. Menghubungkan teori dengan implementasi pemrograman
+
+---
+
+## BAB II  
+### LANDASAN TEORI
+
+#### 2.1 Pengolahan Citra Digital
+Pengolahan citra digital merupakan proses manipulasi citra menggunakan komputer
+untuk memperoleh informasi atau meningkatkan kualitas citra.
+
+#### 2.2 Ekstraksi Bentuk
+Ekstraksi bentuk bertujuan untuk memperoleh representasi geometris dari objek
+berdasarkan kontur dan struktur bentuknya.
+
+#### 2.3 Moment
+Moment digunakan untuk merepresentasikan distribusi piksel suatu objek.
+Jenis moment yang digunakan meliputi raw moment, central moment,
+normalized moment, dan Hu moment.
+
+#### 2.4 Fitur Geometrik
+Fitur geometrik meliputi bounding box, convex hull, solidity, dan eccentricity
+yang digunakan untuk melengkapi informasi bentuk objek.
+
+---
+
+## BAB III  
+### METODOLOGI
+
+#### 3.1 Dataset
+Dataset yang digunakan adalah MPEG-7 Shape Dataset (CE-Shape-1) dengan karakteristik:
+- Format: GIF
+- Jenis citra: Siluet
+- Jumlah kelas: ±70
+- Jumlah citra: ±1400
+
+#### 3.2 Alur Sistem
+Tahapan sistem:
+1. Pembacaan dataset
+2. Preprocessing citra
+3. Deteksi kontur
+4. Ekstraksi moment
+5. Ekstraksi fitur geometrik
+6. Visualisasi hasil
+
+---
+
+## BAB IV  
+### IMPLEMENTASI DAN PEMBAHASAN
+
+#### 4.1 Lingkungan Pengembangan
+Sistem diimplementasikan menggunakan bahasa pemrograman Python
+dengan lingkungan Jupyter Notebook.
+Library utama yang digunakan adalah OpenCV, NumPy, Matplotlib, dan PIL.
+
+#### 4.2 Implementasi Pembacaan Dataset
+Citra dataset dibaca dari direktori lokal dan diproses menggunakan PIL
+untuk menangani format GIF, kemudian dikonversi ke array NumPy.
+
+#### 4.3 Implementasi Preprocessing
+Preprocessing dilakukan dengan mengubah citra grayscale menjadi citra biner
+menggunakan metode Otsu Thresholding.
+
+#### 4.4 Implementasi Deteksi Kontur
+Kontur objek diekstraksi menggunakan metode deteksi kontur eksternal
+sebagai representasi bentuk utama objek.
+
+#### 4.5 Implementasi Ekstraksi Moment
+Moment dihitung berdasarkan kontur objek, meliputi raw moment,
+central moment, normalized moment, dan Hu moment.
+Hu moment digunakan karena bersifat invariant terhadap translasi,
+rotasi, dan skala.
+
+#### 4.6 Implementasi Ekstraksi Fitur Geometrik
+Fitur geometrik yang diekstraksi meliputi bounding box,
+convex hull, solidity, ellipse fitting, dan eccentricity.
+
+#### 4.7 Pembahasan
+Hasil ekstraksi menunjukkan bahwa kombinasi moment dan fitur geometrik
+mampu merepresentasikan karakteristik bentuk objek secara efektif.
+
+---
+
+## BAB V  
+### PENUTUP
+
+#### 5.1 Kesimpulan
+1. Sistem berhasil mengimplementasikan ekstraksi fitur bentuk dan moment
+2. Hu moment merupakan fitur yang stabil dan robust
+3. Dataset MPEG-7 Shape efektif digunakan untuk analisis bentuk
+
+#### 5.2 Saran
+Pengembangan selanjutnya dapat mencakup klasifikasi bentuk
+dan pengujian pada dataset lain.
+
+---
+
+## Anggota Kelompok
+- Anggie Syahputra
+- Barren Alfaridzki
+- Muhammad Rifky Husnaedi
+- Rizky Koto
+- Rizkyllah
