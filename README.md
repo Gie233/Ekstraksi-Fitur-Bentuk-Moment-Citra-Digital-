@@ -31,3 +31,23 @@ http://www.cis.temple.edu/~latecki/TestData/mpeg7shapeB.tar.gz
 
 ## 📊 Implementasi
 Notebook utama dapat diakses pada folder:notebook/ekstraksi_bentuk_moment.ipynb
+
+Notebook tersebut berisi:
+- Preprocessing citra
+- Deteksi kontur
+- Ekstraksi moment
+- Visualisasi fitur bentuk
+
+## 📄 Laporan
+Laporan lengkap proyek kelompok tersedia pada folder:
+report/Group_Project_Report.md
+
+## 👥 Anggota Kelompok
+- Nama 1
+- Nama 2
+- Nama 3
+
+## 📌 Catatan
+Repository ini dibuat untuk tujuan akademik dan pembelajaran.
+
+
